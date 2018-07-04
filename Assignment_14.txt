@@ -1,0 +1,50 @@
+1)Ans:-
+
+
+a1=open('read.txt','r')
+a2=open('read1.txt','w')
+r=a1.read()
+a2.write(r)
+print(r)
+print(f2)
+a1.close()
+a2.close()
+
+2)Ans:-
+
+import random
+file1='random1.txt','w'
+line=[]
+for i in range(10):
+    a =(random.randint(0, 50))
+    line.append(a)
+print(line)
+line.sort()
+print(line)
+r1=file1.read()
+file2='random2.txt','w'
+file2.write(r1)
+print(r1)
+file1.close()
+file2.close()
+
+3)Ans:-
+
+f = open('freequency.txt','r')
+words_dict={}
+for i in f.read().split():
+  word=i.lower()
+  words_dict[word]= words_dict.get(word,0) + 1
+  for key in words_dict.keys():
+    print (str(key)+' = '+str(words_dict[key]))
+f.close()
+
+4)Ans:-
+
+f=open('backtrack.txt', 'r')
+lines=f.readlines()
+for l in lines:
+    print(l)
+lines.reverse()
+for l in lines:
+    print(l)
